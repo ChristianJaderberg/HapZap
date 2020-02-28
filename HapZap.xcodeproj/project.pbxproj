@@ -1,0 +1,595 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D98E9DF224090CCB0082FBEC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D98E9DF124090CCB0082FBEC /* AppDelegate.swift */; };
+		D98E9DF424090CCB0082FBEC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D98E9DF324090CCB0082FBEC /* SceneDelegate.swift */; };
+		D98E9DF624090CCB0082FBEC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D98E9DF524090CCB0082FBEC /* ViewController.swift */; };
+		D98E9DF924090CCB0082FBEC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D98E9DF724090CCB0082FBEC /* Main.storyboard */; };
+		D98E9DFB24090CD10082FBEC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D98E9DFA24090CD10082FBEC /* Assets.xcassets */; };
+		D98E9DFE24090CD10082FBEC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D98E9DFC24090CD10082FBEC /* LaunchScreen.storyboard */; };
+		D98E9E0924090CD10082FBEC /* HapZapTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D98E9E0824090CD10082FBEC /* HapZapTests.swift */; };
+		D98E9E1424090CD10082FBEC /* HapZapUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D98E9E1324090CD10082FBEC /* HapZapUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D98E9E0524090CD10082FBEC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D98E9DE624090CCB0082FBEC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D98E9DED24090CCB0082FBEC;
+			remoteInfo = HapZap;
+		};
+		D98E9E1024090CD10082FBEC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D98E9DE624090CCB0082FBEC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D98E9DED24090CCB0082FBEC;
+			remoteInfo = HapZap;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		D98E9DEE24090CCB0082FBEC /* HapZap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HapZap.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D98E9DF124090CCB0082FBEC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D98E9DF324090CCB0082FBEC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		D98E9DF524090CCB0082FBEC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D98E9DF824090CCB0082FBEC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D98E9DFA24090CD10082FBEC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D98E9DFD24090CD10082FBEC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D98E9DFF24090CD10082FBEC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D98E9E0424090CD10082FBEC /* HapZapTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HapZapTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D98E9E0824090CD10082FBEC /* HapZapTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HapZapTests.swift; sourceTree = "<group>"; };
+		D98E9E0A24090CD10082FBEC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D98E9E0F24090CD10082FBEC /* HapZapUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HapZapUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D98E9E1324090CD10082FBEC /* HapZapUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HapZapUITests.swift; sourceTree = "<group>"; };
+		D98E9E1524090CD10082FBEC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D98E9DEB24090CCB0082FBEC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D98E9E0124090CD10082FBEC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D98E9E0C24090CD10082FBEC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D98E9DE524090CCB0082FBEC = {
+			isa = PBXGroup;
+			children = (
+				D98E9DF024090CCB0082FBEC /* HapZap */,
+				D98E9E0724090CD10082FBEC /* HapZapTests */,
+				D98E9E1224090CD10082FBEC /* HapZapUITests */,
+				D98E9DEF24090CCB0082FBEC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D98E9DEF24090CCB0082FBEC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D98E9DEE24090CCB0082FBEC /* HapZap.app */,
+				D98E9E0424090CD10082FBEC /* HapZapTests.xctest */,
+				D98E9E0F24090CD10082FBEC /* HapZapUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D98E9DF024090CCB0082FBEC /* HapZap */ = {
+			isa = PBXGroup;
+			children = (
+				D98E9DF124090CCB0082FBEC /* AppDelegate.swift */,
+				D98E9DF324090CCB0082FBEC /* SceneDelegate.swift */,
+				D98E9DF524090CCB0082FBEC /* ViewController.swift */,
+				D98E9DF724090CCB0082FBEC /* Main.storyboard */,
+				D98E9DFA24090CD10082FBEC /* Assets.xcassets */,
+				D98E9DFC24090CD10082FBEC /* LaunchScreen.storyboard */,
+				D98E9DFF24090CD10082FBEC /* Info.plist */,
+			);
+			path = HapZap;
+			sourceTree = "<group>";
+		};
+		D98E9E0724090CD10082FBEC /* HapZapTests */ = {
+			isa = PBXGroup;
+			children = (
+				D98E9E0824090CD10082FBEC /* HapZapTests.swift */,
+				D98E9E0A24090CD10082FBEC /* Info.plist */,
+			);
+			path = HapZapTests;
+			sourceTree = "<group>";
+		};
+		D98E9E1224090CD10082FBEC /* HapZapUITests */ = {
+			isa = PBXGroup;
+			children = (
+				D98E9E1324090CD10082FBEC /* HapZapUITests.swift */,
+				D98E9E1524090CD10082FBEC /* Info.plist */,
+			);
+			path = HapZapUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D98E9DED24090CCB0082FBEC /* HapZap */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D98E9E1824090CD10082FBEC /* Build configuration list for PBXNativeTarget "HapZap" */;
+			buildPhases = (
+				D98E9DEA24090CCB0082FBEC /* Sources */,
+				D98E9DEB24090CCB0082FBEC /* Frameworks */,
+				D98E9DEC24090CCB0082FBEC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HapZap;
+			productName = HapZap;
+			productReference = D98E9DEE24090CCB0082FBEC /* HapZap.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D98E9E0324090CD10082FBEC /* HapZapTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D98E9E1B24090CD10082FBEC /* Build configuration list for PBXNativeTarget "HapZapTests" */;
+			buildPhases = (
+				D98E9E0024090CD10082FBEC /* Sources */,
+				D98E9E0124090CD10082FBEC /* Frameworks */,
+				D98E9E0224090CD10082FBEC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D98E9E0624090CD10082FBEC /* PBXTargetDependency */,
+			);
+			name = HapZapTests;
+			productName = HapZapTests;
+			productReference = D98E9E0424090CD10082FBEC /* HapZapTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		D98E9E0E24090CD10082FBEC /* HapZapUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D98E9E1E24090CD10082FBEC /* Build configuration list for PBXNativeTarget "HapZapUITests" */;
+			buildPhases = (
+				D98E9E0B24090CD10082FBEC /* Sources */,
+				D98E9E0C24090CD10082FBEC /* Frameworks */,
+				D98E9E0D24090CD10082FBEC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D98E9E1124090CD10082FBEC /* PBXTargetDependency */,
+			);
+			name = HapZapUITests;
+			productName = HapZapUITests;
+			productReference = D98E9E0F24090CD10082FBEC /* HapZapUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D98E9DE624090CCB0082FBEC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1130;
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = "Christian Jäderberg";
+				TargetAttributes = {
+					D98E9DED24090CCB0082FBEC = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
+					D98E9E0324090CD10082FBEC = {
+						CreatedOnToolsVersion = 11.3.1;
+						TestTargetID = D98E9DED24090CCB0082FBEC;
+					};
+					D98E9E0E24090CD10082FBEC = {
+						CreatedOnToolsVersion = 11.3.1;
+						TestTargetID = D98E9DED24090CCB0082FBEC;
+					};
+				};
+			};
+			buildConfigurationList = D98E9DE924090CCB0082FBEC /* Build configuration list for PBXProject "HapZap" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D98E9DE524090CCB0082FBEC;
+			productRefGroup = D98E9DEF24090CCB0082FBEC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D98E9DED24090CCB0082FBEC /* HapZap */,
+				D98E9E0324090CD10082FBEC /* HapZapTests */,
+				D98E9E0E24090CD10082FBEC /* HapZapUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D98E9DEC24090CCB0082FBEC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D98E9DFE24090CD10082FBEC /* LaunchScreen.storyboard in Resources */,
+				D98E9DFB24090CD10082FBEC /* Assets.xcassets in Resources */,
+				D98E9DF924090CCB0082FBEC /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D98E9E0224090CD10082FBEC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D98E9E0D24090CD10082FBEC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D98E9DEA24090CCB0082FBEC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D98E9DF624090CCB0082FBEC /* ViewController.swift in Sources */,
+				D98E9DF224090CCB0082FBEC /* AppDelegate.swift in Sources */,
+				D98E9DF424090CCB0082FBEC /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D98E9E0024090CD10082FBEC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D98E9E0924090CD10082FBEC /* HapZapTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D98E9E0B24090CD10082FBEC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D98E9E1424090CD10082FBEC /* HapZapUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D98E9E0624090CD10082FBEC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D98E9DED24090CCB0082FBEC /* HapZap */;
+			targetProxy = D98E9E0524090CD10082FBEC /* PBXContainerItemProxy */;
+		};
+		D98E9E1124090CD10082FBEC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D98E9DED24090CCB0082FBEC /* HapZap */;
+			targetProxy = D98E9E1024090CD10082FBEC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D98E9DF724090CCB0082FBEC /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D98E9DF824090CCB0082FBEC /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D98E9DFC24090CD10082FBEC /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D98E9DFD24090CD10082FBEC /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D98E9E1624090CD10082FBEC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D98E9E1724090CD10082FBEC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D98E9E1924090CD10082FBEC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8Y5XX2CJB7;
+				INFOPLIST_FILE = HapZap/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.christianjaderberg.HapZap;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D98E9E1A24090CD10082FBEC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8Y5XX2CJB7;
+				INFOPLIST_FILE = HapZap/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.christianjaderberg.HapZap;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		D98E9E1C24090CD10082FBEC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8Y5XX2CJB7;
+				INFOPLIST_FILE = HapZapTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.christianjaderberg.HapZapTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HapZap.app/HapZap";
+			};
+			name = Debug;
+		};
+		D98E9E1D24090CD10082FBEC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8Y5XX2CJB7;
+				INFOPLIST_FILE = HapZapTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.christianjaderberg.HapZapTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HapZap.app/HapZap";
+			};
+			name = Release;
+		};
+		D98E9E1F24090CD10082FBEC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8Y5XX2CJB7;
+				INFOPLIST_FILE = HapZapUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.christianjaderberg.HapZapUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = HapZap;
+			};
+			name = Debug;
+		};
+		D98E9E2024090CD10082FBEC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8Y5XX2CJB7;
+				INFOPLIST_FILE = HapZapUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.christianjaderberg.HapZapUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = HapZap;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D98E9DE924090CCB0082FBEC /* Build configuration list for PBXProject "HapZap" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D98E9E1624090CD10082FBEC /* Debug */,
+				D98E9E1724090CD10082FBEC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D98E9E1824090CD10082FBEC /* Build configuration list for PBXNativeTarget "HapZap" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D98E9E1924090CD10082FBEC /* Debug */,
+				D98E9E1A24090CD10082FBEC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D98E9E1B24090CD10082FBEC /* Build configuration list for PBXNativeTarget "HapZapTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D98E9E1C24090CD10082FBEC /* Debug */,
+				D98E9E1D24090CD10082FBEC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D98E9E1E24090CD10082FBEC /* Build configuration list for PBXNativeTarget "HapZapUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D98E9E1F24090CD10082FBEC /* Debug */,
+				D98E9E2024090CD10082FBEC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D98E9DE624090CCB0082FBEC /* Project object */;
+}
