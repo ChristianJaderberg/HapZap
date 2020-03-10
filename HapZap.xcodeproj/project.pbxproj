@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0400B1AB2417E3BF00C22904 /* SpotifyAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0400B1AA2417E3BF00C22904 /* SpotifyAPI.swift */; };
+		0400B1AD2417E6D400C22904 /* SpotifyToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0400B1AC2417E6D400C22904 /* SpotifyToken.swift */; };
+		0400B1AF2417EEBA00C22904 /* SpotifySearchData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0400B1AE2417EEBA00C22904 /* SpotifySearchData.swift */; };
 		D9199ED72409386F0049E434 /* SpotifyiOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9199ED62409386F0049E434 /* SpotifyiOS.framework */; };
 		D98E9DF224090CCB0082FBEC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D98E9DF124090CCB0082FBEC /* AppDelegate.swift */; };
 		D98E9DF424090CCB0082FBEC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D98E9DF324090CCB0082FBEC /* SceneDelegate.swift */; };
@@ -36,6 +39,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0400B1AA2417E3BF00C22904 /* SpotifyAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotifyAPI.swift; sourceTree = "<group>"; };
+		0400B1AC2417E6D400C22904 /* SpotifyToken.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotifyToken.swift; sourceTree = "<group>"; };
+		0400B1AE2417EEBA00C22904 /* SpotifySearchData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotifySearchData.swift; sourceTree = "<group>"; };
 		D9199ED62409386F0049E434 /* SpotifyiOS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SpotifyiOS.framework; sourceTree = "<group>"; };
 		D9199ED9240940DB0049E434 /* HapZap-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "HapZap-Bridging-Header.h"; sourceTree = "<group>"; };
 		D98E9DEE24090CCB0082FBEC /* HapZap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HapZap.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -83,6 +89,8 @@
 		D9199ED2240919780049E434 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				0400B1AC2417E6D400C22904 /* SpotifyToken.swift */,
+				0400B1AE2417EEBA00C22904 /* SpotifySearchData.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -90,7 +98,6 @@
 		D9199ED3240919880049E434 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				D98E9DF524090CCB0082FBEC /* ViewController.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -98,6 +105,8 @@
 		D9199ED4240919AC0049E434 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				D98E9DF524090CCB0082FBEC /* ViewController.swift */,
+				0400B1AA2417E3BF00C22904 /* SpotifyAPI.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -298,8 +307,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				D98E9DF624090CCB0082FBEC /* ViewController.swift in Sources */,
+				0400B1AD2417E6D400C22904 /* SpotifyToken.swift in Sources */,
 				D98E9DF224090CCB0082FBEC /* AppDelegate.swift in Sources */,
 				D98E9DF424090CCB0082FBEC /* SceneDelegate.swift in Sources */,
+				0400B1AF2417EEBA00C22904 /* SpotifySearchData.swift in Sources */,
+				0400B1AB2417E3BF00C22904 /* SpotifyAPI.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
