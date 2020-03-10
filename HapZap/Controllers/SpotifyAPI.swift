@@ -11,6 +11,8 @@ import Foundation
 class SpotifyAPI {
     
     var currentToken = SpotifyToken()
+    var offset = 0
+    var limit = 50
     
     func getRandomSearch() -> String {
         // A list of all characters that can be chosen
@@ -31,9 +33,9 @@ class SpotifyAPI {
         return randomSearch;
     }
     
-    func start(searchString: String) -> SpotifySearchData {
+    func search(searchString: String, offset: Int, completion: @escaping( Result<SpotifySearchData, Error>) -> Void) {
         
-        var searchData = SpotifySearchData()
+        self.offset = offset
         
         self.getToken() { (result) in
             switch result {
@@ -45,9 +47,10 @@ class SpotifyAPI {
                     self.searchTracks(searchString: searchString) { (result) in
                         switch result {
                         case .success(let receivedSearchData):
-                            searchData = receivedSearchData
+                            completion(.success(receivedSearchData))
                             
                         case .failure(let error): print("Error \(error)")
+                            completion(.failure(error))
                         }
                     }
             
@@ -55,8 +58,6 @@ class SpotifyAPI {
             case .failure(let error): print("Error \(error)")
             }
         }
-        
-        return searchData
     }
     
     func getToken(completion: @escaping( Result<SpotifyToken, Error>) -> Void) {
@@ -105,7 +106,7 @@ class SpotifyAPI {
         
         let oathToken = self.currentToken.accessToken
         
-        let urlString = "https://api.spotify.com/v1/search?q=\(searchString)&type=track&offset=5"
+        let urlString = "https://api.spotify.com/v1/search?q=\(searchString)&type=track&limit=\(self.limit)&offset=\(self.offset)"
         guard let url: URL = URL(string: urlString) else { return }
         
         var request = URLRequest(url: url)
@@ -131,7 +132,9 @@ class SpotifyAPI {
                     let searchData = try decoder.decode(SpotifySearchData.self, from: unwrappedData)
                     completion(.success(searchData))
                 } catch {
-                    print("Unable to parse JSON")
+                    print("Unable to parse JSON from SearchData")
+                    print(error)
+                    print(error.localizedDescription)
                 }
             }
         }
