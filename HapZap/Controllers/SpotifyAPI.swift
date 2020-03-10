@@ -14,25 +14,6 @@ class SpotifyAPI {
     var offset = 0
     var limit = 50
     
-    func getRandomSearch() -> String {
-        // A list of all characters that can be chosen
-        let characters = "abcdefghijklmnopqrstuvwxyz";
-        
-        // Gets a random character from the characters string
-        let randomCharacter = String((0...26).map{ _ in characters.randomElement()! })
-        var randomSearch = ""
-
-        // Places the wildcard character at the beginning, or both beginning and end, randomly
-        let randomCase = Int.random(in: 0...1)
-        if (randomCase == 0) {
-            randomSearch = randomCharacter + "%"
-        } else {
-            randomSearch = "%" + randomCharacter + "%"
-        }
-        
-        return randomSearch;
-    }
-    
     func search(searchString: String, offset: Int, completion: @escaping( Result<SpotifySearchData, Error>) -> Void) {
         
         self.offset = offset

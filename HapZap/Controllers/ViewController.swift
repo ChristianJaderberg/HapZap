@@ -10,24 +10,19 @@ import UIKit
 
 class ViewController: UIViewController {
     
-    var currentToken = SpotifyToken()
-    
-    let spotifyAPI = SpotifyAPI()
-    var currentSearchData = SpotifySearchData()
+    var randomSongController = RandomSongController()
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.spotifyAPI.search(searchString: "d", offset: 100) { (result) in
+        randomSongController.refresh() { (result) in
             switch result {
-            case .success(let searchData):
-                self.currentSearchData = searchData
+            case .success(let randomSongController):
+                self.randomSongController = randomSongController
                 
                 DispatchQueue.main.async {
-                    print("Searchdata received in viewcontroller")
-                    print("length of items:" + String(self.currentSearchData.tracks.items.count))
-                    print(self.currentSearchData.tracks.items[2].name)
-                    print(self.currentSearchData.tracks.items[7].artists[0])
+                    // Update UI
+                    print("HapZapped song: \"\(randomSongController.getSongName())\" with \"\(randomSongController.getArtistName())\"")
                 }
             case .failure(let error): print("Error \(error)")
             }
