@@ -15,14 +15,16 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        randomSongController.refresh() { (result) in
+        randomSongController.refresh(question: "How will I die?") { (result) in
             switch result {
             case .success(let randomSongController):
                 self.randomSongController = randomSongController
                 
                 DispatchQueue.main.async {
                     // Update UI
-                    print("HapZapped song: \"\(randomSongController.getSongName())\" with \"\(randomSongController.getArtistName())\"")
+                    print("Question: \"" + self.randomSongController.getQuestion() + "\"")
+                    print("HapZapped song: \"\(self.randomSongController.getSongName())\" with \"\(self.randomSongController.getArtistName())\"")
+                    print("AlbumImage url: \(self.randomSongController.getAlbumImage(size: 640))")
                 }
             case .failure(let error): print("Error \(error)")
             }

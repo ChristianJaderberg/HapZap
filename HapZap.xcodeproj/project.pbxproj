@@ -11,6 +11,7 @@
 		0400B1AD2417E6D400C22904 /* SpotifyToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0400B1AC2417E6D400C22904 /* SpotifyToken.swift */; };
 		0400B1AF2417EEBA00C22904 /* SpotifySearchData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0400B1AE2417EEBA00C22904 /* SpotifySearchData.swift */; };
 		0492087D2418232A0078A844 /* RandomSongController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0492087C2418232A0078A844 /* RandomSongController.swift */; };
+		D90C175324191AEE004960DB /* SongHapZap.swift in Sources */ = {isa = PBXBuildFile; fileRef = D90C175224191AEE004960DB /* SongHapZap.swift */; };
 		D9199ED72409386F0049E434 /* SpotifyiOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9199ED62409386F0049E434 /* SpotifyiOS.framework */; };
 		D98E9DF224090CCB0082FBEC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D98E9DF124090CCB0082FBEC /* AppDelegate.swift */; };
 		D98E9DF424090CCB0082FBEC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D98E9DF324090CCB0082FBEC /* SceneDelegate.swift */; };
@@ -44,6 +45,7 @@
 		0400B1AC2417E6D400C22904 /* SpotifyToken.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotifyToken.swift; sourceTree = "<group>"; };
 		0400B1AE2417EEBA00C22904 /* SpotifySearchData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotifySearchData.swift; sourceTree = "<group>"; };
 		0492087C2418232A0078A844 /* RandomSongController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomSongController.swift; sourceTree = "<group>"; };
+		D90C175224191AEE004960DB /* SongHapZap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongHapZap.swift; sourceTree = "<group>"; };
 		D9199ED62409386F0049E434 /* SpotifyiOS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SpotifyiOS.framework; sourceTree = "<group>"; };
 		D9199ED9240940DB0049E434 /* HapZap-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "HapZap-Bridging-Header.h"; sourceTree = "<group>"; };
 		D98E9DEE24090CCB0082FBEC /* HapZap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HapZap.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -93,6 +95,7 @@
 			children = (
 				0400B1AC2417E6D400C22904 /* SpotifyToken.swift */,
 				0400B1AE2417EEBA00C22904 /* SpotifySearchData.swift */,
+				D90C175224191AEE004960DB /* SongHapZap.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -110,7 +113,6 @@
 			isa = PBXGroup;
 			children = (
 				D98E9DF524090CCB0082FBEC /* ViewController.swift */,
-				0400B1AA2417E3BF00C22904 /* SpotifyAPI.swift */,
 				0492087C2418232A0078A844 /* RandomSongController.swift */,
 			);
 			path = Controllers;
@@ -119,6 +121,7 @@
 		D9199ED5240919C90049E434 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				0400B1AA2417E3BF00C22904 /* SpotifyAPI.swift */,
 			);
 			path = "Supporting Files";
 			sourceTree = "<group>";
@@ -315,6 +318,7 @@
 				D98E9DF224090CCB0082FBEC /* AppDelegate.swift in Sources */,
 				D98E9DF424090CCB0082FBEC /* SceneDelegate.swift in Sources */,
 				0400B1AF2417EEBA00C22904 /* SpotifySearchData.swift in Sources */,
+				D90C175324191AEE004960DB /* SongHapZap.swift in Sources */,
 				0400B1AB2417E3BF00C22904 /* SpotifyAPI.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

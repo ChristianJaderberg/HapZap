@@ -12,13 +12,12 @@ class RandomSongController {
     
     let spotifyAPI = SpotifyAPI()
     var currentSearchData = SpotifySearchData()
-    var currentSongHapZap = SongHapZap()
     
     var currentSearchString = ""
     var currentOffset = 0
     var currentTrackIndex = 0
     
-    func refresh(question: String, completion: @escaping( Result<RandomSongController, Error>) -> Void) {
+    func refresh(completion: @escaping( Result<RandomSongController, Error>) -> Void) {
         
         // Generate random values to use for the search
         self.randomizer()
@@ -29,14 +28,9 @@ class RandomSongController {
             case .success(let searchData):
                 self.currentSearchData = searchData
                 
-                // Save searchData in SongHapZap-object
-                self.currentSongHapZap.question = question
-                self.currentSongHapZap.songName = self.currentSearchData.tracks.items[self.currentTrackIndex].name
-                self.currentSongHapZap.artists =  self.currentSearchData.tracks.items[self.currentTrackIndex].artists
-                self.currentSongHapZap.images = self.currentSearchData.tracks.items[self.currentTrackIndex].album.images
-                
                 DispatchQueue.main.async {
                     print("Searchdata received in randomsongcontroller")
+                    print("length of items:" + String(self.currentSearchData.tracks.items.count))
                     completion(.success(self))
                 }
             case .failure(let error): print("Error \(error)")
@@ -57,30 +51,12 @@ class RandomSongController {
         
     }
     
-    func getQuestion() -> String {
-        return self.currentSongHapZap.question
+    func getArtistName() -> String {
+        return self.currentSearchData.tracks.items[self.currentTrackIndex].artists[0].name
     }
     
     func getSongName() -> String {
-        return self.currentSongHapZap.songName
-    }
-    
-    func getArtistName() -> String {
-        return self.currentSongHapZap.artists[0].name
-        // TODO fix if multiple names
-    }
-    
-    func getAlbumImage(size: Int) -> String {
-        
-        let images = self.currentSongHapZap.images
-        
-        for i in images {
-            if (size == i.width) {
-                return i.url
-            }
-        }
-        
-        return "No image was found"
+        return self.currentSearchData.tracks.items[self.currentTrackIndex].name
     }
     
 }
