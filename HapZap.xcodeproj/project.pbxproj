@@ -13,6 +13,7 @@
 		0492087D2418232A0078A844 /* RandomSongController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0492087C2418232A0078A844 /* RandomSongController.swift */; };
 		D90C175324191AEE004960DB /* SongHapZap.swift in Sources */ = {isa = PBXBuildFile; fileRef = D90C175224191AEE004960DB /* SongHapZap.swift */; };
 		D9199ED72409386F0049E434 /* SpotifyiOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9199ED62409386F0049E434 /* SpotifyiOS.framework */; };
+		D939BC2724196D1C008DF87C /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D939BC2624196D1C008DF87C /* StartViewController.swift */; };
 		D98E9DF224090CCB0082FBEC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D98E9DF124090CCB0082FBEC /* AppDelegate.swift */; };
 		D98E9DF424090CCB0082FBEC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D98E9DF324090CCB0082FBEC /* SceneDelegate.swift */; };
 		D98E9DF624090CCB0082FBEC /* HapZapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D98E9DF524090CCB0082FBEC /* HapZapViewController.swift */; };
@@ -48,6 +49,7 @@
 		D90C175224191AEE004960DB /* SongHapZap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongHapZap.swift; sourceTree = "<group>"; };
 		D9199ED62409386F0049E434 /* SpotifyiOS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SpotifyiOS.framework; sourceTree = "<group>"; };
 		D9199ED9240940DB0049E434 /* HapZap-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "HapZap-Bridging-Header.h"; sourceTree = "<group>"; };
+		D939BC2624196D1C008DF87C /* StartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartViewController.swift; sourceTree = "<group>"; };
 		D98E9DEE24090CCB0082FBEC /* HapZap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HapZap.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D98E9DF124090CCB0082FBEC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D98E9DF324090CCB0082FBEC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -112,6 +114,7 @@
 		D9199ED4240919AC0049E434 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				D939BC2624196D1C008DF87C /* StartViewController.swift */,
 				D98E9DF524090CCB0082FBEC /* HapZapViewController.swift */,
 				0492087C2418232A0078A844 /* RandomSongController.swift */,
 			);
@@ -317,6 +320,7 @@
 				0492087D2418232A0078A844 /* RandomSongController.swift in Sources */,
 				D98E9DF224090CCB0082FBEC /* AppDelegate.swift in Sources */,
 				D98E9DF424090CCB0082FBEC /* SceneDelegate.swift in Sources */,
+				D939BC2724196D1C008DF87C /* StartViewController.swift in Sources */,
 				0400B1AF2417EEBA00C22904 /* SpotifySearchData.swift in Sources */,
 				D90C175324191AEE004960DB /* SongHapZap.swift in Sources */,
 				0400B1AB2417E3BF00C22904 /* SpotifyAPI.swift in Sources */,
