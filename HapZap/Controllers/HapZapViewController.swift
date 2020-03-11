@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class HapZapViewController: UIViewController {
     
     var randomSongController = RandomSongController()
 

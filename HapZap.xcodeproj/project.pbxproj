@@ -15,7 +15,7 @@
 		D9199ED72409386F0049E434 /* SpotifyiOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9199ED62409386F0049E434 /* SpotifyiOS.framework */; };
 		D98E9DF224090CCB0082FBEC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D98E9DF124090CCB0082FBEC /* AppDelegate.swift */; };
 		D98E9DF424090CCB0082FBEC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D98E9DF324090CCB0082FBEC /* SceneDelegate.swift */; };
-		D98E9DF624090CCB0082FBEC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D98E9DF524090CCB0082FBEC /* ViewController.swift */; };
+		D98E9DF624090CCB0082FBEC /* HapZapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D98E9DF524090CCB0082FBEC /* HapZapViewController.swift */; };
 		D98E9DF924090CCB0082FBEC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D98E9DF724090CCB0082FBEC /* Main.storyboard */; };
 		D98E9DFB24090CD10082FBEC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D98E9DFA24090CD10082FBEC /* Assets.xcassets */; };
 		D98E9DFE24090CD10082FBEC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D98E9DFC24090CD10082FBEC /* LaunchScreen.storyboard */; };
@@ -51,7 +51,7 @@
 		D98E9DEE24090CCB0082FBEC /* HapZap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HapZap.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D98E9DF124090CCB0082FBEC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D98E9DF324090CCB0082FBEC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		D98E9DF524090CCB0082FBEC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D98E9DF524090CCB0082FBEC /* HapZapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HapZapViewController.swift; sourceTree = "<group>"; };
 		D98E9DF824090CCB0082FBEC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D98E9DFA24090CD10082FBEC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D98E9DFD24090CD10082FBEC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -112,7 +112,7 @@
 		D9199ED4240919AC0049E434 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				D98E9DF524090CCB0082FBEC /* ViewController.swift */,
+				D98E9DF524090CCB0082FBEC /* HapZapViewController.swift */,
 				0492087C2418232A0078A844 /* RandomSongController.swift */,
 			);
 			path = Controllers;
@@ -312,7 +312,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D98E9DF624090CCB0082FBEC /* ViewController.swift in Sources */,
+				D98E9DF624090CCB0082FBEC /* HapZapViewController.swift in Sources */,
 				0400B1AD2417E6D400C22904 /* SpotifyToken.swift in Sources */,
 				0492087D2418232A0078A844 /* RandomSongController.swift in Sources */,
 				D98E9DF224090CCB0082FBEC /* AppDelegate.swift in Sources */,
