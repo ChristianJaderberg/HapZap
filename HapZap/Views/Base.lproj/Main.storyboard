@@ -31,6 +31,11 @@
                                     <segue destination="BYZ-38-t0r" kind="show" identifier="goToHapZap" id="Fak-EE-iJh"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6QH-ut-Z7J">
+                                <rect key="frame" x="153" y="516" width="109" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Saved HapZaps"/>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="dCV-7F-wgG"/>
@@ -52,50 +57,90 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="O3N-fq-lfG">
-                                <rect key="frame" x="159" y="203" width="97" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Question" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DfC-0s-4o2">
+                                <rect key="frame" x="20.5" y="108" width="373" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SongName" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PPV-H7-vkb">
+                                <rect key="frame" x="20.5" y="334" width="373" height="25.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ARTISTNAME" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Myb-fF-59h">
+                                <rect key="frame" x="20.5" y="369.5" width="373" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="What would you like to know?" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="O3N-fq-lfG">
+                                <rect key="frame" x="20" y="738" width="374" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oT2-au-Daa">
-                                <rect key="frame" x="150" y="303" width="114" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oT2-au-Daa">
+                                <rect key="frame" x="20" y="792" width="374" height="30"/>
                                 <state key="normal" title="Get HapZapped!"/>
                                 <connections>
                                     <action selector="hapZapButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="CA1-Ru-9Ci"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SongName" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PPV-H7-vkb">
-                                <rect key="frame" x="164.5" y="437.5" width="85" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="ArtistName" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Myb-fF-59h">
-                                <rect key="frame" x="164" y="486" width="87" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Question" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DfC-0s-4o2">
-                                <rect key="frame" x="100" y="377" width="215" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="mA5-oK-DvR">
+                                <rect key="frame" x="103.5" y="148.5" width="207" height="165.5"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Fnc-AU-Oah">
+                                <rect key="frame" x="20" y="410" width="374" height="30"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2gO-lN-s67">
+                                        <rect key="frame" x="0.0" y="0.0" width="187" height="30"/>
+                                        <state key="normal" title="Play in Spotify"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hd0-dS-n1n">
+                                        <rect key="frame" x="187" y="0.0" width="187" height="30"/>
+                                        <state key="normal" title="Save HapZap"/>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h0F-Qc-BD4">
+                                <rect key="frame" x="20" y="832" width="374" height="30"/>
+                                <state key="normal" title="Saved HapZaps"/>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="PPV-H7-vkb" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Iml-hZ-JgN"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Fnc-AU-Oah" secondAttribute="trailing" constant="20" id="02l-5x-pqV"/>
+                            <constraint firstItem="DfC-0s-4o2" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="1kP-9U-ec6"/>
+                            <constraint firstItem="Myb-fF-59h" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.9" id="3Zg-HJ-CYx"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="O3N-fq-lfG" secondAttribute="trailing" constant="20" id="46g-jA-7K1"/>
+                            <constraint firstItem="Myb-fF-59h" firstAttribute="top" secondItem="PPV-H7-vkb" secondAttribute="bottom" constant="10" id="9Tm-Bk-CNX"/>
+                            <constraint firstItem="mA5-oK-DvR" firstAttribute="top" secondItem="DfC-0s-4o2" secondAttribute="bottom" constant="20" id="DOK-GA-hio"/>
+                            <constraint firstItem="Fnc-AU-Oah" firstAttribute="top" secondItem="Myb-fF-59h" secondAttribute="bottom" constant="20" id="GDL-TM-XpC"/>
+                            <constraint firstItem="Fnc-AU-Oah" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="Gcl-3i-5sn"/>
+                            <constraint firstItem="oT2-au-Daa" firstAttribute="top" secondItem="O3N-fq-lfG" secondAttribute="bottom" constant="20" id="Hc3-Ae-uy9"/>
+                            <constraint firstItem="h0F-Qc-BD4" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="Jb1-up-fD8"/>
                             <constraint firstItem="PPV-H7-vkb" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="KE0-xc-7pc"/>
+                            <constraint firstItem="PPV-H7-vkb" firstAttribute="top" secondItem="mA5-oK-DvR" secondAttribute="bottom" constant="20" id="LHB-oh-b05"/>
+                            <constraint firstItem="h0F-Qc-BD4" firstAttribute="top" secondItem="oT2-au-Daa" secondAttribute="bottom" constant="10" id="Te1-Hh-C28"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="oT2-au-Daa" secondAttribute="trailing" constant="20" id="UBL-TD-VOa"/>
+                            <constraint firstItem="oT2-au-Daa" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="WcS-eW-qPo"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="h0F-Qc-BD4" secondAttribute="bottom" id="ZjA-Lu-oiR"/>
+                            <constraint firstItem="O3N-fq-lfG" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="aYk-le-Mcc"/>
+                            <constraint firstItem="mA5-oK-DvR" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.5" id="cpN-Vy-dNV"/>
+                            <constraint firstItem="Myb-fF-59h" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="eDQ-nA-LFO"/>
+                            <constraint firstItem="mA5-oK-DvR" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.4" id="fyB-up-HDh"/>
+                            <constraint firstItem="PPV-H7-vkb" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.9" id="m5D-W8-XP4"/>
+                            <constraint firstItem="DfC-0s-4o2" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.9" id="r3E-yA-UMQ"/>
+                            <constraint firstItem="mA5-oK-DvR" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="vLh-0V-fz5"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="h0F-Qc-BD4" secondAttribute="trailing" constant="20" id="vRG-dx-mi3"/>
+                            <constraint firstItem="DfC-0s-4o2" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="yQh-2d-Ke7"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" id="h3N-7y-xPg"/>
                     <connections>
+                        <outlet property="albumImageView" destination="mA5-oK-DvR" id="2R9-nU-AsL"/>
                         <outlet property="artistNameLabel" destination="Myb-fF-59h" id="3Ay-ma-vhi"/>
                         <outlet property="questionLabel" destination="DfC-0s-4o2" id="8KA-Db-siC"/>
                         <outlet property="questionTextField" destination="O3N-fq-lfG" id="iVb-cK-GGp"/>
@@ -106,10 +151,10 @@
             </objects>
             <point key="canvasLocation" x="2868.115942028986" y="117.85714285714285"/>
         </scene>
-        <!--HapZapsTable View Controller-->
+        <!--SavedHapZaps View Controller-->
         <scene sceneID="WAK-Dc-eJo">
             <objects>
-                <viewController id="ZQg-pp-anC" userLabel="HapZapsTable View Controller" sceneMemberID="viewController">
+                <viewController id="ZQg-pp-anC" userLabel="SavedHapZaps View Controller" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="9X7-pg-P34">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -128,21 +173,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uuV-ZC-Db6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3721.739130434783" y="122.54464285714285"/>
-        </scene>
-        <!--SavedHapZap View Controller-->
-        <scene sceneID="rr2-E6-I19">
-            <objects>
-                <viewController id="hCj-2v-Qhb" userLabel="SavedHapZap View Controller" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="NuM-R9-kGU">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <viewLayoutGuide key="safeArea" id="faL-mb-dRi"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="hlm-rR-lSV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="4584.057971014493" y="126.5625"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="HO9-fx-9tY">
