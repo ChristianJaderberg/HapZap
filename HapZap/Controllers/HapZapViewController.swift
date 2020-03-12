@@ -25,7 +25,13 @@ class HapZapViewController: UIViewController {
         hapZap(question: self.initQuestion)
     }
     
-    @IBAction func hapZapButtonPressed(_ sender: Any) {
+    @IBAction func hapZapButtonTapped(_ sender: Any) {
+    }
+    
+    @IBAction func playInSpotifyButtonTapped(_ sender: Any) {
+        if let url = URL(string: self.randomSongController.getTrackURI()) {
+            UIApplication.shared.open(url)
+        }
     }
     
     func hapZap(question: String) -> Void {

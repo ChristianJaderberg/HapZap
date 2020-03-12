@@ -16,28 +16,35 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wqH-rI-NWT">
-                                <rect key="frame" x="159" y="225" width="97" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nIO-K7-suD">
-                                <rect key="frame" x="150" y="433" width="114" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Get HapZapped!"/>
-                                <connections>
-                                    <action selector="hapZapButtonPressed:" destination="Bf3-L9-Ccm" eventType="touchUpInside" id="rqu-mM-Bym"/>
-                                    <segue destination="BYZ-38-t0r" kind="show" identifier="goToHapZap" id="Fak-EE-iJh"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6QH-ut-Z7J">
-                                <rect key="frame" x="153" y="516" width="109" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Saved HapZaps"/>
-                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="mfc-4E-GjG">
+                                <rect key="frame" x="20" y="188" width="374" height="114"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="What would you like to know?" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wqH-rI-NWT">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nIO-K7-suD">
+                                        <rect key="frame" x="0.0" y="44" width="374" height="30"/>
+                                        <state key="normal" title="Get HapZapped!"/>
+                                        <connections>
+                                            <action selector="hapZapButtonPressed:" destination="Bf3-L9-Ccm" eventType="touchUpInside" id="rqu-mM-Bym"/>
+                                            <segue destination="BYZ-38-t0r" kind="show" identifier="goToHapZap" id="Fak-EE-iJh"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6QH-ut-Z7J">
+                                        <rect key="frame" x="0.0" y="84" width="374" height="30"/>
+                                        <state key="normal" title="Saved HapZaps"/>
+                                    </button>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="dCV-7F-wgG" firstAttribute="trailing" secondItem="mfc-4E-GjG" secondAttribute="trailing" constant="20" id="UHo-b4-6vK"/>
+                            <constraint firstItem="mfc-4E-GjG" firstAttribute="leading" secondItem="dCV-7F-wgG" secondAttribute="leading" constant="20" id="hZz-73-qc6"/>
+                            <constraint firstItem="mfc-4E-GjG" firstAttribute="top" secondItem="dCV-7F-wgG" secondAttribute="top" constant="100" id="o3q-bX-3ss"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="dCV-7F-wgG"/>
                     </view>
                     <navigationItem key="navigationItem" id="kRn-cf-4hY"/>
@@ -76,12 +83,12 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="What would you like to know?" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="O3N-fq-lfG">
-                                <rect key="frame" x="20" y="738" width="374" height="34"/>
+                                <rect key="frame" x="20" y="718" width="374" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oT2-au-Daa">
-                                <rect key="frame" x="20" y="792" width="374" height="30"/>
+                                <rect key="frame" x="20" y="772" width="374" height="30"/>
                                 <state key="normal" title="Get HapZapped!"/>
                                 <connections>
                                     <action selector="hapZapButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="CA1-Ru-9Ci"/>
@@ -96,6 +103,9 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2gO-lN-s67">
                                         <rect key="frame" x="0.0" y="0.0" width="187" height="30"/>
                                         <state key="normal" title="Play in Spotify"/>
+                                        <connections>
+                                            <action selector="playInSpotifyButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ZdP-T7-hef"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hd0-dS-n1n">
                                         <rect key="frame" x="187" y="0.0" width="187" height="30"/>
@@ -104,7 +114,7 @@
                                 </subviews>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h0F-Qc-BD4">
-                                <rect key="frame" x="20" y="832" width="374" height="30"/>
+                                <rect key="frame" x="20" y="812" width="374" height="30"/>
                                 <state key="normal" title="Saved HapZaps"/>
                             </button>
                         </subviews>
@@ -125,7 +135,7 @@
                             <constraint firstItem="h0F-Qc-BD4" firstAttribute="top" secondItem="oT2-au-Daa" secondAttribute="bottom" constant="10" id="Te1-Hh-C28"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="oT2-au-Daa" secondAttribute="trailing" constant="20" id="UBL-TD-VOa"/>
                             <constraint firstItem="oT2-au-Daa" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="WcS-eW-qPo"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="h0F-Qc-BD4" secondAttribute="bottom" id="ZjA-Lu-oiR"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="h0F-Qc-BD4" secondAttribute="bottom" constant="20" id="ZjA-Lu-oiR"/>
                             <constraint firstItem="O3N-fq-lfG" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="aYk-le-Mcc"/>
                             <constraint firstItem="mA5-oK-DvR" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.5" id="cpN-Vy-dNV"/>
                             <constraint firstItem="Myb-fF-59h" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="eDQ-nA-LFO"/>

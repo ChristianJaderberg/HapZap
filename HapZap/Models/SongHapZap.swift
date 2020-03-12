@@ -14,12 +14,14 @@ struct SongHapZap {
     var songName: String
     var artists: [Artist]
     var images: [Image]
+    var trackURI: String
     
     init() {
         self.question = ""
         self.songName = ""
         self.artists = []
         self.images = []
+        self.trackURI = ""
     }
     
 }

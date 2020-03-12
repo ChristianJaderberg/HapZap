@@ -34,6 +34,7 @@ class RandomSongController {
                 self.currentSongHapZap.songName = self.currentSearchData.tracks.items[self.currentTrackIndex].name
                 self.currentSongHapZap.artists =  self.currentSearchData.tracks.items[self.currentTrackIndex].artists
                 self.currentSongHapZap.images = self.currentSearchData.tracks.items[self.currentTrackIndex].album.images
+                self.currentSongHapZap.trackURI = self.currentSearchData.tracks.items[self.currentTrackIndex].uri
                 
                 DispatchQueue.main.async {
                     print("Searchdata received in randomsongcontroller")
@@ -81,6 +82,10 @@ class RandomSongController {
         }
         
         return "No image was found"
+    }
+    
+    func getTrackURI() -> String {
+        return self.currentSongHapZap.trackURI
     }
     
 }
