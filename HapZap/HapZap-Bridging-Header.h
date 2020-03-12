@@ -9,5 +9,6 @@
 #ifndef HapZap_Bridging_Header_h
 #define HapZap_Bridging_Header_h
 #import <SpotifyiOS/SpotifyiOS.h>
+#import "Firebase.h"
 
 #endif /* HapZap_Bridging_Header_h */

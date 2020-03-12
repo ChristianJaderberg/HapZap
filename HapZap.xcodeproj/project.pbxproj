@@ -10,6 +10,20 @@
 		0400B1AB2417E3BF00C22904 /* SpotifyAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0400B1AA2417E3BF00C22904 /* SpotifyAPI.swift */; };
 		0400B1AD2417E6D400C22904 /* SpotifyToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0400B1AC2417E6D400C22904 /* SpotifyToken.swift */; };
 		0400B1AF2417EEBA00C22904 /* SpotifySearchData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0400B1AE2417EEBA00C22904 /* SpotifySearchData.swift */; };
+		0460A416241AB69B0086FA58 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0460A415241AB69B0086FA58 /* GoogleService-Info.plist */; };
+		0460A423241ABA3E0086FA58 /* nanopb.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0460A418241ABA3B0086FA58 /* nanopb.framework */; };
+		0460A424241ABA3E0086FA58 /* GoogleAppMeasurement.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0460A419241ABA3C0086FA58 /* GoogleAppMeasurement.framework */; };
+		0460A425241ABA3E0086FA58 /* GoogleDataTransportCCTSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0460A41A241ABA3C0086FA58 /* GoogleDataTransportCCTSupport.framework */; };
+		0460A426241ABA3E0086FA58 /* GoogleUtilities.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0460A41B241ABA3C0086FA58 /* GoogleUtilities.framework */; };
+		0460A427241ABA3E0086FA58 /* FIRAnalyticsConnector.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0460A41C241ABA3C0086FA58 /* FIRAnalyticsConnector.framework */; };
+		0460A428241ABA3E0086FA58 /* FirebaseCoreDiagnostics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0460A41D241ABA3C0086FA58 /* FirebaseCoreDiagnostics.framework */; };
+		0460A429241ABA3E0086FA58 /* FirebaseInstallations.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0460A41E241ABA3D0086FA58 /* FirebaseInstallations.framework */; };
+		0460A42A241ABA3E0086FA58 /* GoogleDataTransport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0460A41F241ABA3D0086FA58 /* GoogleDataTransport.framework */; };
+		0460A42B241ABA3E0086FA58 /* PromisesObjC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0460A420241ABA3D0086FA58 /* PromisesObjC.framework */; };
+		0460A42C241ABA3E0086FA58 /* FirebaseAnalytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0460A421241ABA3D0086FA58 /* FirebaseAnalytics.framework */; };
+		0460A42D241ABA3E0086FA58 /* FirebaseCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0460A422241ABA3E0086FA58 /* FirebaseCore.framework */; };
+		0460A431241ABA9E0086FA58 /* leveldb-library.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0460A42F241ABA9D0086FA58 /* leveldb-library.framework */; };
+		0460A432241ABA9E0086FA58 /* FirebaseDatabase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0460A430241ABA9E0086FA58 /* FirebaseDatabase.framework */; };
 		0492087D2418232A0078A844 /* RandomSongController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0492087C2418232A0078A844 /* RandomSongController.swift */; };
 		D90C175324191AEE004960DB /* SongHapZap.swift in Sources */ = {isa = PBXBuildFile; fileRef = D90C175224191AEE004960DB /* SongHapZap.swift */; };
 		D9199ED72409386F0049E434 /* SpotifyiOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9199ED62409386F0049E434 /* SpotifyiOS.framework */; };
@@ -45,6 +59,22 @@
 		0400B1AA2417E3BF00C22904 /* SpotifyAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotifyAPI.swift; sourceTree = "<group>"; };
 		0400B1AC2417E6D400C22904 /* SpotifyToken.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotifyToken.swift; sourceTree = "<group>"; };
 		0400B1AE2417EEBA00C22904 /* SpotifySearchData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotifySearchData.swift; sourceTree = "<group>"; };
+		0460A415241AB69B0086FA58 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		0460A418241ABA3B0086FA58 /* nanopb.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = nanopb.framework; sourceTree = "<group>"; };
+		0460A419241ABA3C0086FA58 /* GoogleAppMeasurement.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleAppMeasurement.framework; sourceTree = "<group>"; };
+		0460A41A241ABA3C0086FA58 /* GoogleDataTransportCCTSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleDataTransportCCTSupport.framework; sourceTree = "<group>"; };
+		0460A41B241ABA3C0086FA58 /* GoogleUtilities.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleUtilities.framework; sourceTree = "<group>"; };
+		0460A41C241ABA3C0086FA58 /* FIRAnalyticsConnector.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FIRAnalyticsConnector.framework; sourceTree = "<group>"; };
+		0460A41D241ABA3C0086FA58 /* FirebaseCoreDiagnostics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FirebaseCoreDiagnostics.framework; sourceTree = "<group>"; };
+		0460A41E241ABA3D0086FA58 /* FirebaseInstallations.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FirebaseInstallations.framework; sourceTree = "<group>"; };
+		0460A41F241ABA3D0086FA58 /* GoogleDataTransport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleDataTransport.framework; sourceTree = "<group>"; };
+		0460A420241ABA3D0086FA58 /* PromisesObjC.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = PromisesObjC.framework; sourceTree = "<group>"; };
+		0460A421241ABA3D0086FA58 /* FirebaseAnalytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FirebaseAnalytics.framework; sourceTree = "<group>"; };
+		0460A422241ABA3E0086FA58 /* FirebaseCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FirebaseCore.framework; sourceTree = "<group>"; };
+		0460A42F241ABA9D0086FA58 /* leveldb-library.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = "leveldb-library.framework"; sourceTree = "<group>"; };
+		0460A430241ABA9E0086FA58 /* FirebaseDatabase.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FirebaseDatabase.framework; sourceTree = "<group>"; };
+		0460A433241ABE580086FA58 /* Firebase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Firebase.h; sourceTree = "<group>"; };
+		0460A434241AC1310086FA58 /* module.modulemap */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.module-map"; path = module.modulemap; sourceTree = "<group>"; };
 		0492087C2418232A0078A844 /* RandomSongController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomSongController.swift; sourceTree = "<group>"; };
 		D90C175224191AEE004960DB /* SongHapZap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongHapZap.swift; sourceTree = "<group>"; };
 		D9199ED62409386F0049E434 /* SpotifyiOS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SpotifyiOS.framework; sourceTree = "<group>"; };
@@ -71,7 +101,20 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0460A432241ABA9E0086FA58 /* FirebaseDatabase.framework in Frameworks */,
+				0460A42B241ABA3E0086FA58 /* PromisesObjC.framework in Frameworks */,
+				0460A423241ABA3E0086FA58 /* nanopb.framework in Frameworks */,
+				0460A429241ABA3E0086FA58 /* FirebaseInstallations.framework in Frameworks */,
+				0460A427241ABA3E0086FA58 /* FIRAnalyticsConnector.framework in Frameworks */,
 				D9199ED72409386F0049E434 /* SpotifyiOS.framework in Frameworks */,
+				0460A425241ABA3E0086FA58 /* GoogleDataTransportCCTSupport.framework in Frameworks */,
+				0460A428241ABA3E0086FA58 /* FirebaseCoreDiagnostics.framework in Frameworks */,
+				0460A42A241ABA3E0086FA58 /* GoogleDataTransport.framework in Frameworks */,
+				0460A42D241ABA3E0086FA58 /* FirebaseCore.framework in Frameworks */,
+				0460A42C241ABA3E0086FA58 /* FirebaseAnalytics.framework in Frameworks */,
+				0460A426241ABA3E0086FA58 /* GoogleUtilities.framework in Frameworks */,
+				0460A431241ABA9E0086FA58 /* leveldb-library.framework in Frameworks */,
+				0460A424241ABA3E0086FA58 /* GoogleAppMeasurement.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -92,6 +135,42 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0460A417241ABA0F0086FA58 /* FirebaseAnalytics */ = {
+			isa = PBXGroup;
+			children = (
+				0460A41C241ABA3C0086FA58 /* FIRAnalyticsConnector.framework */,
+				0460A421241ABA3D0086FA58 /* FirebaseAnalytics.framework */,
+				0460A422241ABA3E0086FA58 /* FirebaseCore.framework */,
+				0460A41D241ABA3C0086FA58 /* FirebaseCoreDiagnostics.framework */,
+				0460A41E241ABA3D0086FA58 /* FirebaseInstallations.framework */,
+				0460A419241ABA3C0086FA58 /* GoogleAppMeasurement.framework */,
+				0460A41F241ABA3D0086FA58 /* GoogleDataTransport.framework */,
+				0460A41A241ABA3C0086FA58 /* GoogleDataTransportCCTSupport.framework */,
+				0460A41B241ABA3C0086FA58 /* GoogleUtilities.framework */,
+				0460A418241ABA3B0086FA58 /* nanopb.framework */,
+				0460A420241ABA3D0086FA58 /* PromisesObjC.framework */,
+			);
+			path = FirebaseAnalytics;
+			sourceTree = "<group>";
+		};
+		0460A42E241ABA560086FA58 /* FirebaseDatabase */ = {
+			isa = PBXGroup;
+			children = (
+				0460A430241ABA9E0086FA58 /* FirebaseDatabase.framework */,
+				0460A42F241ABA9D0086FA58 /* leveldb-library.framework */,
+			);
+			path = FirebaseDatabase;
+			sourceTree = "<group>";
+		};
+		0460A435241AC1890086FA58 /* Firebase */ = {
+			isa = PBXGroup;
+			children = (
+				0460A433241ABE580086FA58 /* Firebase.h */,
+				0460A434241AC1310086FA58 /* module.modulemap */,
+			);
+			path = Firebase;
+			sourceTree = "<group>";
+		};
 		D9199ED2240919780049E434 /* Models */ = {
 			isa = PBXGroup;
 			children = (
@@ -160,6 +239,10 @@
 				D9199ED5240919C90049E434 /* Supporting Files */,
 				D98E9DFA24090CD10082FBEC /* Assets.xcassets */,
 				D98E9DFF24090CD10082FBEC /* Info.plist */,
+				0460A415241AB69B0086FA58 /* GoogleService-Info.plist */,
+				0460A42E241ABA560086FA58 /* FirebaseDatabase */,
+				0460A417241ABA0F0086FA58 /* FirebaseAnalytics */,
+				0460A435241AC1890086FA58 /* Firebase */,
 				D9199ED62409386F0049E434 /* SpotifyiOS.framework */,
 				D9199ED9240940DB0049E434 /* HapZap-Bridging-Header.h */,
 			);
@@ -289,6 +372,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D98E9DFE24090CD10082FBEC /* LaunchScreen.storyboard in Resources */,
+				0460A416241AB69B0086FA58 /* GoogleService-Info.plist in Resources */,
 				D98E9DFB24090CD10082FBEC /* Assets.xcassets in Resources */,
 				D98E9DF924090CCB0082FBEC /* Main.storyboard in Resources */,
 			);
@@ -436,6 +520,7 @@
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				USER_HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/HapZap/Firebase";
 			};
 			name = Debug;
 		};
@@ -490,6 +575,7 @@
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				USER_HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/HapZap/Firebase";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -497,12 +583,15 @@
 		D98E9E1924090CD10082FBEC /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8Y5XX2CJB7;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/HapZap",
+					"$(PROJECT_DIR)/HapZap/FirebaseAnalytics",
+					"$(PROJECT_DIR)/HapZap/FirebaseDatabase",
 				);
 				INFOPLIST_FILE = HapZap/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
@@ -517,18 +606,22 @@
 				SWIFT_PRECOMPILE_BRIDGING_HEADER = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
+				USER_HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/HapZap";
 			};
 			name = Debug;
 		};
 		D98E9E1A24090CD10082FBEC /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8Y5XX2CJB7;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/HapZap",
+					"$(PROJECT_DIR)/HapZap/FirebaseAnalytics",
+					"$(PROJECT_DIR)/HapZap/FirebaseDatabase",
 				);
 				INFOPLIST_FILE = HapZap/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
@@ -543,6 +636,7 @@
 				SWIFT_PRECOMPILE_BRIDGING_HEADER = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
+				USER_HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/HapZap";
 			};
 			name = Release;
 		};

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>425676784861-4j5ioh40h5u0e5sir62qjs233hq477l8.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.425676784861-4j5ioh40h5u0e5sir62qjs233hq477l8</string>
+	<key>API_KEY</key>
+	<string>AIzaSyBjQKlNmZ9iRfsZso9wJxxKcuRoI__TiRc</string>
+	<key>GCM_SENDER_ID</key>
+	<string>425676784861</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.christianjaderberg.HapZap</string>
+	<key>PROJECT_ID</key>
+	<string>hapzap-33919</string>
+	<key>STORAGE_BUCKET</key>
+	<string>hapzap-33919.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:425676784861:ios:eac58bb15d0a44b572c734</string>
+	<key>DATABASE_URL</key>
+	<string>https://hapzap-33919.firebaseio.com</string>
+</dict>
+</plist>
