@@ -8,10 +8,19 @@
 
 import UIKit
 
+protocol HapZapTableViewCellDelegate {
+    func didTapPlayInSpotifyButton(spotifyURI: String)
+}
+
 class HapZapTableViewCell: UITableViewCell {
 
     @IBOutlet weak var questionLabel: UILabel!
-    @IBOutlet weak var songTitleLabel: UILabel!
+    @IBOutlet weak var songNameLabel: UILabel!
+    @IBOutlet weak var artistNameLabel: UILabel!
+    @IBOutlet weak var albumImageView: UIImageView!
+    
+    var delegate: HapZapTableViewCellDelegate?
+    var hapZap: SongHapZap?
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -24,4 +33,12 @@ class HapZapTableViewCell: UITableViewCell {
         // Configure the view for the selected state
     }
 
+    func setHapZap(hapzap: SongHapZap) {
+        self.hapZap = hapzap
+    }
+    
+    @IBAction func playInSpotifyButtonTapped(_ sender: Any) {
+        guard let spotifyURI = self.hapZap?.trackURI else { return }
+        self.delegate?.didTapPlayInSpotifyButton(spotifyURI: spotifyURI)
+    }
 }

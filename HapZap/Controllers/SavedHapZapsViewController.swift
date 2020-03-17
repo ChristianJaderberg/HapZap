@@ -61,15 +61,24 @@ class SavedHapZapsViewController: UIViewController, UITableViewDelegate, UITable
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        tableView.rowHeight = 200
+        tableView.rowHeight = 300
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! HapZapTableViewCell
         
         let hapZap = self.savedHapZaps[indexPath.row]
         
-        cell.questionLabel.text = hapZap.question
-        cell.songTitleLabel.text = hapZap.songName
+        cell.delegate = self
+        cell.setHapZap(hapzap: hapZap)
         
+        cell.questionLabel.text = hapZap.question
+        cell.songNameLabel.text = hapZap.songName
+        cell.artistNameLabel.text = hapZap.artistName
+        
+        // set albumimage
+        let url = hapZap.imageURL
+        guard let imageURL = URL(string: url) else { return cell }
+        cell.albumImageView.downloadImage(from: imageURL)
+ 
         return cell
     }
     
@@ -85,9 +94,20 @@ class SavedHapZapsViewController: UIViewController, UITableViewDelegate, UITable
                 return
             }
             
+            print("hapzap was removed")
             self.updateTableView()
             
         })
     }
 
+}
+
+extension UIViewController: HapZapTableViewCellDelegate {
+    
+    func didTapPlayInSpotifyButton(spotifyURI: String) {
+        if let url = URL(string: spotifyURI) {
+            UIApplication.shared.open(url)
+        }
+    }
+    
 }

@@ -47,7 +47,7 @@ class HapZapViewController: UIViewController, UITextFieldDelegate {
             self.questionTextField.text = ""
         } else {
             // create and show alert message
-            let alert : UIAlertController = UIAlertController(title: "No input!", message: "Please enter a HapZap-question", preferredStyle: .alert)
+            let alert: UIAlertController = UIAlertController(title: "No input!", message: "Please enter a HapZap-question", preferredStyle: .alert)
             alert.addAction(UIAlertAction(title: "Ok", style: .default, handler: nil))
             self.present(alert, animated: true, completion: nil)
         }
@@ -63,6 +63,10 @@ class HapZapViewController: UIViewController, UITextFieldDelegate {
                 print("HapZap was not saved: \(error.localizedDescription)")
             } else {
                 print("HapZap saved successfully!")
+                // create and show alert message
+                let alert: UIAlertController = UIAlertController(title: "Saved HapZap", message: "Your HapZap was saved successfully!", preferredStyle: .alert)
+                alert.addAction(UIAlertAction(title: "Ok", style: .default, handler: nil))
+                self.present(alert, animated: true, completion: nil)
             }
         })
         
