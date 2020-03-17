@@ -30,7 +30,7 @@ class StartViewController: UIViewController {
             self.questionTextField.text = ""
         } else {
             // create and show alert message
-            let alert : UIAlertController = UIAlertController(title: "No input", message: "Please enter something to search for", preferredStyle: .alert)
+            let alert : UIAlertController = UIAlertController(title: "No input!", message: "Please enter a HapZap-question", preferredStyle: .alert)
             alert.addAction(UIAlertAction(title: "Ok", style: .default, handler: nil))
             self.present(alert, animated: true, completion: nil)
         }

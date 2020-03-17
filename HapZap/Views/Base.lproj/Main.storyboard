@@ -17,7 +17,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="mfc-4E-GjG">
-                                <rect key="frame" x="20" y="188" width="374" height="114"/>
+                                <rect key="frame" x="20" y="391" width="374" height="114"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="What would you like to know?" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wqH-rI-NWT">
                                         <rect key="frame" x="0.0" y="0.0" width="374" height="34"/>
@@ -35,15 +35,18 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6QH-ut-Z7J">
                                         <rect key="frame" x="0.0" y="84" width="374" height="30"/>
                                         <state key="normal" title="Saved HapZaps"/>
+                                        <connections>
+                                            <segue destination="ZQg-pp-anC" kind="show" id="bXo-SW-hDr"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
+                            <constraint firstItem="mfc-4E-GjG" firstAttribute="centerY" secondItem="4hy-dK-9s1" secondAttribute="centerY" id="AGj-8w-Dex"/>
                             <constraint firstItem="dCV-7F-wgG" firstAttribute="trailing" secondItem="mfc-4E-GjG" secondAttribute="trailing" constant="20" id="UHo-b4-6vK"/>
                             <constraint firstItem="mfc-4E-GjG" firstAttribute="leading" secondItem="dCV-7F-wgG" secondAttribute="leading" constant="20" id="hZz-73-qc6"/>
-                            <constraint firstItem="mfc-4E-GjG" firstAttribute="top" secondItem="dCV-7F-wgG" secondAttribute="top" constant="100" id="o3q-bX-3ss"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="dCV-7F-wgG"/>
                     </view>
@@ -91,7 +94,6 @@
                                 <rect key="frame" x="20" y="772" width="374" height="30"/>
                                 <state key="normal" title="Get HapZapped!"/>
                                 <connections>
-                                    <action selector="hapZapButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="CA1-Ru-9Ci"/>
                                     <action selector="hapZapButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wwH-iH-zHl"/>
                                 </connections>
                             </button>
@@ -260,4 +262,7 @@
             <point key="canvasLocation" x="1144.9275362318842" y="115.84821428571428"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="noZ-AT-Kxs"/>
+    </inferredMetricsTieBreakers>
 </document>

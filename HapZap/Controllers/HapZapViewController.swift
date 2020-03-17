@@ -9,7 +9,7 @@
 import UIKit
 import FirebaseDatabase
 
-class HapZapViewController: UIViewController {
+class HapZapViewController: UIViewController, UITextFieldDelegate {
     
     var randomSongController = RandomSongController()
     var initQuestion = ""
@@ -24,9 +24,34 @@ class HapZapViewController: UIViewController {
         super.viewDidLoad()
         
         hapZap(question: self.initQuestion)
+        
+        // code needed for hiding keyboard when enter is pressed
+        self.questionTextField.delegate = self
+    }
+    
+    // hide keyboard when enter is pressed
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        return true
     }
     
     @IBAction func hapZapButtonTapped(_ sender: Any) {
+        
+        if (self.questionTextField.text != "") {
+            hapZap(question: self.questionTextField.text!)
+            
+            // hide keyboard
+            self.questionTextField.resignFirstResponder()
+            
+            // clear textfield
+            self.questionTextField.text = ""
+        } else {
+            // create and show alert message
+            let alert : UIAlertController = UIAlertController(title: "No input!", message: "Please enter a HapZap-question", preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: "Ok", style: .default, handler: nil))
+            self.present(alert, animated: true, completion: nil)
+        }
+        
     }
     
     @IBAction func saveHapZapButtonTapped(_ sender: Any) {
@@ -78,7 +103,7 @@ class HapZapViewController: UIViewController {
         guard let imageURL = URL(string: url) else { return }
         self.albumImageView.downloadImage(from: imageURL)
     }
-    
+
 }
 
 extension UIImageView {
