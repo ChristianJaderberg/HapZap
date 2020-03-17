@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import FirebaseDatabase
 
 class HapZapViewController: UIViewController {
     
@@ -26,6 +27,20 @@ class HapZapViewController: UIViewController {
     }
     
     @IBAction func hapZapButtonTapped(_ sender: Any) {
+    }
+    
+    @IBAction func saveHapZapButtonTapped(_ sender: Any) {
+        
+        let ref = Database.database().reference()
+        let data = self.randomSongController.currentSongHapZap.getAsDictionary()
+        ref.child("songhapzaps/").childByAutoId().setValue(data, withCompletionBlock: { err, ref in
+            if let error = err {
+                print("HapZap was not saved: \(error.localizedDescription)")
+            } else {
+                print("HapZap saved successfully!")
+            }
+        })
+        
     }
     
     @IBAction func playInSpotifyButtonTapped(_ sender: Any) {
@@ -59,7 +74,7 @@ class HapZapViewController: UIViewController {
     }
     
     func setAlbumImage() {
-        let url = self.randomSongController.getAlbumImage(size: 640)
+        let url = self.randomSongController.getAlbumImage()
         guard let imageURL = URL(string: url) else { return }
         self.albumImageView.downloadImage(from: imageURL)
     }

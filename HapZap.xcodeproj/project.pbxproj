@@ -36,6 +36,8 @@
 		D98E9DFE24090CD10082FBEC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D98E9DFC24090CD10082FBEC /* LaunchScreen.storyboard */; };
 		D98E9E0924090CD10082FBEC /* HapZapTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D98E9E0824090CD10082FBEC /* HapZapTests.swift */; };
 		D98E9E1424090CD10082FBEC /* HapZapUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D98E9E1324090CD10082FBEC /* HapZapUITests.swift */; };
+		D9F6E6B4241FC00B00E51318 /* HapZapTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9F6E6B3241FC00B00E51318 /* HapZapTableViewCell.swift */; };
+		D9F6E6B6241FC39600E51318 /* SavedHapZapsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9F6E6B5241FC39600E51318 /* SavedHapZapsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -94,6 +96,8 @@
 		D98E9E0F24090CD10082FBEC /* HapZapUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HapZapUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D98E9E1324090CD10082FBEC /* HapZapUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HapZapUITests.swift; sourceTree = "<group>"; };
 		D98E9E1524090CD10082FBEC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D9F6E6B3241FC00B00E51318 /* HapZapTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HapZapTableViewCell.swift; sourceTree = "<group>"; };
+		D9F6E6B5241FC39600E51318 /* SavedHapZapsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedHapZapsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -186,6 +190,7 @@
 			children = (
 				D98E9DFC24090CD10082FBEC /* LaunchScreen.storyboard */,
 				D98E9DF724090CCB0082FBEC /* Main.storyboard */,
+				D9F6E6B3241FC00B00E51318 /* HapZapTableViewCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -195,6 +200,7 @@
 			children = (
 				D939BC2624196D1C008DF87C /* StartViewController.swift */,
 				D98E9DF524090CCB0082FBEC /* HapZapViewController.swift */,
+				D9F6E6B5241FC39600E51318 /* SavedHapZapsViewController.swift */,
 				0492087C2418232A0078A844 /* RandomSongController.swift */,
 			);
 			path = Controllers;
@@ -399,6 +405,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D9F6E6B6241FC39600E51318 /* SavedHapZapsViewController.swift in Sources */,
 				D98E9DF624090CCB0082FBEC /* HapZapViewController.swift in Sources */,
 				0400B1AD2417E6D400C22904 /* SpotifyToken.swift in Sources */,
 				0492087D2418232A0078A844 /* RandomSongController.swift in Sources */,
@@ -406,6 +413,7 @@
 				D98E9DF424090CCB0082FBEC /* SceneDelegate.swift in Sources */,
 				D939BC2724196D1C008DF87C /* StartViewController.swift in Sources */,
 				0400B1AF2417EEBA00C22904 /* SpotifySearchData.swift in Sources */,
+				D9F6E6B4241FC00B00E51318 /* HapZapTableViewCell.swift in Sources */,
 				D90C175324191AEE004960DB /* SongHapZap.swift in Sources */,
 				0400B1AB2417E3BF00C22904 /* SpotifyAPI.swift in Sources */,
 			);
