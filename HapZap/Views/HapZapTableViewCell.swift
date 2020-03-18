@@ -18,13 +18,13 @@ class HapZapTableViewCell: UITableViewCell {
     @IBOutlet weak var songNameLabel: UILabel!
     @IBOutlet weak var artistNameLabel: UILabel!
     @IBOutlet weak var albumImageView: UIImageView!
+    @IBOutlet weak var cellContentView: UIView!
     
     var delegate: HapZapTableViewCellDelegate?
     var hapZap: SongHapZap?
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {

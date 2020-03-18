@@ -9,7 +9,7 @@
 import UIKit
 import FirebaseDatabase
 
-class HapZapViewController: UIViewController, UITextFieldDelegate {
+class HapZapViewController: UIViewController {
     
     var randomSongController = RandomSongController()
     var initQuestion = ""
@@ -18,39 +18,29 @@ class HapZapViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var albumImageView: UIImageView!
     @IBOutlet weak var songNameLabel: UILabel!
     @IBOutlet weak var artistNameLabel: UILabel!
-    @IBOutlet weak var questionTextField: UITextField!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         hapZap(question: self.initQuestion)
-        
-        // code needed for hiding keyboard when enter is pressed
-        self.questionTextField.delegate = self
-    }
-    
-    // hide keyboard when enter is pressed
-    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
-        textField.resignFirstResponder()
-        return true
     }
     
     @IBAction func hapZapButtonTapped(_ sender: Any) {
         
-        if (self.questionTextField.text != "") {
-            hapZap(question: self.questionTextField.text!)
-            
-            // hide keyboard
-            self.questionTextField.resignFirstResponder()
-            
-            // clear textfield
-            self.questionTextField.text = ""
-        } else {
-            // create and show alert message
-            let alert: UIAlertController = UIAlertController(title: "No input!", message: "Please enter a HapZap-question", preferredStyle: .alert)
-            alert.addAction(UIAlertAction(title: "Ok", style: .default, handler: nil))
-            self.present(alert, animated: true, completion: nil)
-        }
+        let alert: UIAlertController = UIAlertController(title: "New HapZap", message: "Enter your HapZap-question:", preferredStyle: .alert)
+        
+        alert.addTextField(configurationHandler: {
+            textfield in textfield.placeholder = "What would you like to know?"
+        })
+        
+        alert.addAction(UIAlertAction(title: "Get HapZapped!", style: .default, handler: { textfield in
+            let hapZapQuestion = alert.textFields?.first?.text
+            if hapZapQuestion != "" {
+                self.hapZap(question: hapZapQuestion!)
+            }
+        }))
+        
+        self.present(alert, animated: true, completion: nil)
         
     }
     

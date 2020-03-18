@@ -13,6 +13,7 @@ class SavedHapZapsViewController: UIViewController, UITableViewDelegate, UITable
     
     let ref = Database.database().reference()
     var savedHapZaps = [SongHapZap]()
+    var switchCellBGColor = true
     
     @IBOutlet weak var hapZapsTableView: UITableView!
     
@@ -61,10 +62,11 @@ class SavedHapZapsViewController: UIViewController, UITableViewDelegate, UITable
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        tableView.rowHeight = 300
+        tableView.rowHeight = 330
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! HapZapTableViewCell
         
+        self.savedHapZaps.reverse()
         let hapZap = self.savedHapZaps[indexPath.row]
         
         cell.delegate = self
@@ -72,12 +74,20 @@ class SavedHapZapsViewController: UIViewController, UITableViewDelegate, UITable
         
         cell.questionLabel.text = hapZap.question
         cell.songNameLabel.text = hapZap.songName
-        cell.artistNameLabel.text = hapZap.artistName
+        cell.artistNameLabel.text = hapZap.artistName.uppercased()
         
         // set albumimage
         let url = hapZap.imageURL
         guard let imageURL = URL(string: url) else { return cell }
         cell.albumImageView.downloadImage(from: imageURL)
+        
+        if switchCellBGColor {
+            cell.cellContentView.backgroundColor = UIColor.blue
+            self.switchCellBGColor = false
+        } else {
+            cell.cellContentView.backgroundColor = UIColor.red
+            self.switchCellBGColor = true
+        }
  
         return cell
     }
