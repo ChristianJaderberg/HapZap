@@ -16,28 +16,36 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="mfc-4E-GjG">
-                                <rect key="frame" x="20" y="377" width="374" height="142"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="mfc-4E-GjG">
+                                <rect key="frame" x="20" y="353" width="374" height="190"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="What would you like to know?" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wqH-rI-NWT">
                                         <rect key="frame" x="0.0" y="0.0" width="374" height="50"/>
+                                        <color key="backgroundColor" red="0.84984401438240265" green="0.84984401438240265" blue="0.84984401438240265" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="50" id="cYd-n6-Hv6"/>
                                         </constraints>
+                                        <color key="textColor" red="0.21568627450980393" green="0.14509803921568626" blue="0.11764705882352941" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="17"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nIO-K7-suD">
-                                        <rect key="frame" x="0.0" y="60" width="374" height="36"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nIO-K7-suD" customClass="CustomButtonPrimary" customModule="HapZap" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="75" width="374" height="45"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="45" id="QrJ-5P-jIF"/>
+                                        </constraints>
                                         <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="17"/>
                                         <state key="normal" title="Get HapZapped!"/>
                                         <connections>
-                                            <action selector="hapZapButtonPressed:" destination="Bf3-L9-Ccm" eventType="touchUpInside" id="rqu-mM-Bym"/>
+                                            <action selector="hapZapButtonPressed:" destination="Bf3-L9-Ccm" eventType="touchUpInside" id="JRX-Hs-Svb"/>
                                             <segue destination="BYZ-38-t0r" kind="show" identifier="goToHapZap" id="Fak-EE-iJh"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6QH-ut-Z7J">
-                                        <rect key="frame" x="0.0" y="106" width="374" height="36"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6QH-ut-Z7J" customClass="CustomButtonSecondary" customModule="HapZap" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="145" width="374" height="45"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="45" id="xOj-gJ-KMW"/>
+                                        </constraints>
                                         <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="17"/>
                                         <state key="normal" title="Saved HapZaps"/>
                                         <connections>
@@ -47,7 +55,7 @@
                                 </subviews>
                             </stackView>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="backgroundColor" red="0.84984401438240265" green="0.84984401438240265" blue="0.84984401438240265" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="mfc-4E-GjG" firstAttribute="centerY" secondItem="4hy-dK-9s1" secondAttribute="centerY" id="AGj-8w-Dex"/>
                             <constraint firstItem="dCV-7F-wgG" firstAttribute="trailing" secondItem="mfc-4E-GjG" secondAttribute="trailing" constant="20" id="UHo-b4-6vK"/>
@@ -55,7 +63,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="dCV-7F-wgG"/>
                     </view>
-                    <navigationItem key="navigationItem" id="kRn-cf-4hY"/>
+                    <navigationItem key="navigationItem" title="Welcome to HapZap!" id="kRn-cf-4hY"/>
                     <connections>
                         <outlet property="questionTextField" destination="wqH-rI-NWT" id="qjF-sH-3uD"/>
                     </connections>
@@ -75,23 +83,26 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Question" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DfC-0s-4o2">
                                 <rect key="frame" x="20.5" y="108" width="373" height="23.5"/>
                                 <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="17"/>
-                                <nil key="textColor"/>
+                                <color key="textColor" red="0.29803921568627451" green="0.16862745098039217" blue="0.21176470588235294" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SongName" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PPV-H7-vkb">
                                 <rect key="frame" x="20.5" y="337" width="373" height="30.5"/>
                                 <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="22"/>
-                                <nil key="textColor"/>
+                                <color key="textColor" red="0.29803921568627451" green="0.16862745098039217" blue="0.21176470588235294" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ARTISTNAME" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Myb-fF-59h">
                                 <rect key="frame" x="20.5" y="377.5" width="373" height="23.5"/>
                                 <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="17"/>
-                                <nil key="textColor"/>
+                                <color key="textColor" red="0.29803921568627451" green="0.16862745098039217" blue="0.21176470588235294" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oT2-au-Daa">
-                                <rect key="frame" x="20" y="760" width="374" height="36"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oT2-au-Daa" customClass="CustomButtonPrimary" customModule="HapZap" customModuleProvider="target">
+                                <rect key="frame" x="20" y="742" width="374" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="LtR-5M-ICg"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="17"/>
                                 <state key="normal" title="Get HapZapped!"/>
                                 <connections>
@@ -101,29 +112,32 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="mA5-oK-DvR">
                                 <rect key="frame" x="103.5" y="151.5" width="207" height="165.5"/>
                             </imageView>
-                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Fnc-AU-Oah">
-                                <rect key="frame" x="20" y="421" width="374" height="36"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Fnc-AU-Oah">
+                                <rect key="frame" x="20" y="421" width="374" height="32"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2gO-lN-s67">
-                                        <rect key="frame" x="0.0" y="0.0" width="187" height="36"/>
-                                        <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="17"/>
-                                        <state key="normal" title="Play in Spotify"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2gO-lN-s67" customClass="CustomButtonPrimary" customModule="HapZap" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="182" height="32"/>
+                                        <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="14"/>
+                                        <state key="normal" title="PLAY IN SPOTIFY"/>
                                         <connections>
                                             <action selector="playInSpotifyButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ZdP-T7-hef"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hd0-dS-n1n">
-                                        <rect key="frame" x="187" y="0.0" width="187" height="36"/>
-                                        <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="17"/>
-                                        <state key="normal" title="Save HapZap"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hd0-dS-n1n" customClass="CustomButtonPrimary" customModule="HapZap" customModuleProvider="target">
+                                        <rect key="frame" x="192" y="0.0" width="182" height="32"/>
+                                        <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="14"/>
+                                        <state key="normal" title="SAVE HAPZAP"/>
                                         <connections>
                                             <action selector="saveHapZapButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="NbD-Ml-duo"/>
                                         </connections>
                                     </button>
                                 </subviews>
                             </stackView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h0F-Qc-BD4">
-                                <rect key="frame" x="20" y="806" width="374" height="36"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h0F-Qc-BD4" customClass="CustomButtonSecondary" customModule="HapZap" customModuleProvider="target">
+                                <rect key="frame" x="20" y="797" width="374" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="TFc-hT-Mv7"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="17"/>
                                 <state key="normal" title="Saved HapZaps"/>
                                 <connections>
@@ -131,7 +145,7 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="backgroundColor" red="0.84984401438240265" green="0.84984401438240265" blue="0.84984401438240265" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Fnc-AU-Oah" secondAttribute="trailing" constant="20" id="02l-5x-pqV"/>
                             <constraint firstItem="DfC-0s-4o2" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="1kP-9U-ec6"/>
@@ -158,7 +172,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
-                    <navigationItem key="navigationItem" id="h3N-7y-xPg"/>
+                    <navigationItem key="navigationItem" title="Your HapZap" id="h3N-7y-xPg"/>
                     <connections>
                         <outlet property="albumImageView" destination="mA5-oK-DvR" id="2R9-nU-AsL"/>
                         <outlet property="artistNameLabel" destination="Myb-fF-59h" id="3Ay-ma-vhi"/>
@@ -178,72 +192,69 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="ZJG-lD-Ocl">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="ZJG-lD-Ocl">
                                 <rect key="frame" x="0.0" y="88" width="414" height="774"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <color key="backgroundColor" red="0.84984401438240265" green="0.84984401438240265" blue="0.84984401438240265" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="separatorColor" red="0.29803921568627451" green="0.16862745098039217" blue="0.21176470588235294" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" rowHeight="330" id="hZC-3c-zEN" customClass="HapZapTableViewCell" customModule="HapZap" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="414" height="330"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" rowHeight="420" id="hZC-3c-zEN" customClass="HapZapTableViewCell" customModule="HapZap" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="420"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="hZC-3c-zEN" id="YpF-RB-CS3">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="330"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="420"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Question" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vPN-La-4OR">
                                                     <rect key="frame" x="20" y="31" width="374" height="23.5"/>
                                                     <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="17"/>
-                                                    <nil key="textColor"/>
+                                                    <color key="textColor" red="0.29803921568627451" green="0.16862745098039217" blue="0.21176470588235294" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WTJ-hV-wQF">
-                                                    <rect key="frame" x="20" y="74.5" width="394" height="165.5"/>
-                                                    <subviews>
-                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="dDm-wH-bCY">
-                                                            <rect key="frame" x="0.0" y="0.0" width="165.5" height="165.5"/>
-                                                        </imageView>
-                                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="YMW-vD-gTa">
-                                                            <rect key="frame" x="165.5" y="0.0" width="228.5" height="165.5"/>
-                                                            <subviews>
-                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SongName" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jlo-Eb-1rX">
-                                                                    <rect key="frame" x="63" y="0.0" width="103" height="83"/>
-                                                                    <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="20"/>
-                                                                    <nil key="textColor"/>
-                                                                    <nil key="highlightedColor"/>
-                                                                </label>
-                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ARTISTNAME" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lTw-LD-WwZ">
-                                                                    <rect key="frame" x="62" y="83" width="105" height="82.5"/>
-                                                                    <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="17"/>
-                                                                    <nil key="textColor"/>
-                                                                    <nil key="highlightedColor"/>
-                                                                </label>
-                                                            </subviews>
-                                                        </stackView>
-                                                    </subviews>
-                                                </stackView>
-                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2hl-VV-COH">
-                                                    <rect key="frame" x="40" y="260" width="334" height="36"/>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="dDm-wH-bCY">
+                                                    <rect key="frame" x="124" y="74.5" width="166" height="165.5"/>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SongName" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jlo-Eb-1rX">
+                                                    <rect key="frame" x="40" y="260" width="334" height="27.5"/>
+                                                    <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="20"/>
+                                                    <color key="textColor" red="0.29803921568627451" green="0.16862745098039217" blue="0.21176470588235294" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ARTISTNAME" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lTw-LD-WwZ">
+                                                    <rect key="frame" x="40" y="292.5" width="334" height="23.5"/>
                                                     <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="17"/>
-                                                    <state key="normal" title="Play in Spotify"/>
+                                                    <color key="textColor" red="0.29803921568627451" green="0.16862745098039217" blue="0.21176470588235294" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2hl-VV-COH" customClass="CustomButtonPrimary" customModule="HapZap" customModuleProvider="target">
+                                                    <rect key="frame" x="40" y="346" width="334" height="32"/>
+                                                    <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="14"/>
+                                                    <state key="normal" title="PLAY IN SPOTIFY"/>
                                                     <connections>
                                                         <action selector="playInSpotifyButtonTapped:" destination="hZC-3c-zEN" eventType="touchUpInside" id="j7X-NI-qjS"/>
                                                     </connections>
                                                 </button>
                                             </subviews>
-                                            <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <constraints>
                                                 <constraint firstAttribute="trailingMargin" secondItem="2hl-VV-COH" secondAttribute="trailing" constant="20" id="04Z-BM-fgf"/>
-                                                <constraint firstAttribute="trailing" secondItem="WTJ-hV-wQF" secondAttribute="trailing" id="75x-YD-rm6"/>
+                                                <constraint firstItem="lTw-LD-WwZ" firstAttribute="top" secondItem="jlo-Eb-1rX" secondAttribute="bottom" constant="5" id="3CT-Yk-FjA"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="jlo-Eb-1rX" secondAttribute="trailing" constant="20" id="8mV-Ds-8m1"/>
                                                 <constraint firstAttribute="trailingMargin" secondItem="vPN-La-4OR" secondAttribute="trailing" id="BER-X3-g2L"/>
                                                 <constraint firstItem="vPN-La-4OR" firstAttribute="leading" secondItem="YpF-RB-CS3" secondAttribute="leadingMargin" id="CVN-S3-39F"/>
+                                                <constraint firstItem="jlo-Eb-1rX" firstAttribute="leading" secondItem="YpF-RB-CS3" secondAttribute="leadingMargin" constant="20" id="Hs7-78-iGN"/>
+                                                <constraint firstItem="jlo-Eb-1rX" firstAttribute="top" secondItem="dDm-wH-bCY" secondAttribute="bottom" constant="20" id="PeO-3v-oQo"/>
                                                 <constraint firstItem="vPN-La-4OR" firstAttribute="top" secondItem="YpF-RB-CS3" secondAttribute="topMargin" constant="20" id="QtP-Un-arl"/>
-                                                <constraint firstItem="2hl-VV-COH" firstAttribute="top" secondItem="WTJ-hV-wQF" secondAttribute="bottom" constant="20" id="VXk-YZ-EzC"/>
-                                                <constraint firstItem="WTJ-hV-wQF" firstAttribute="leading" secondItem="YpF-RB-CS3" secondAttribute="leading" constant="20" symbolic="YES" id="eBU-xG-ssw"/>
-                                                <constraint firstItem="dDm-wH-bCY" firstAttribute="width" secondItem="YpF-RB-CS3" secondAttribute="width" multiplier="0.4" id="ecI-Fy-KDg"/>
-                                                <constraint firstItem="WTJ-hV-wQF" firstAttribute="top" secondItem="vPN-La-4OR" secondAttribute="bottom" constant="20" id="kjM-1t-Qan"/>
-                                                <constraint firstItem="dDm-wH-bCY" firstAttribute="height" secondItem="YpF-RB-CS3" secondAttribute="width" multiplier="0.4" id="nWC-oP-Fse"/>
+                                                <constraint firstItem="dDm-wH-bCY" firstAttribute="centerX" secondItem="YpF-RB-CS3" secondAttribute="centerX" id="R9P-d9-Zid"/>
+                                                <constraint firstItem="lTw-LD-WwZ" firstAttribute="leading" secondItem="YpF-RB-CS3" secondAttribute="leadingMargin" constant="20" id="W4K-sz-G4I"/>
+                                                <constraint firstItem="dDm-wH-bCY" firstAttribute="height" secondItem="YpF-RB-CS3" secondAttribute="width" multiplier="0.4" id="XKb-Jq-s7x"/>
+                                                <constraint firstItem="dDm-wH-bCY" firstAttribute="top" secondItem="vPN-La-4OR" secondAttribute="bottom" constant="20" id="XwS-Br-kMt"/>
+                                                <constraint firstItem="dDm-wH-bCY" firstAttribute="width" secondItem="YpF-RB-CS3" secondAttribute="width" multiplier="0.4" id="gJ6-tz-3Kd"/>
+                                                <constraint firstItem="2hl-VV-COH" firstAttribute="top" secondItem="lTw-LD-WwZ" secondAttribute="bottom" constant="30" id="prE-FE-bgx"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="lTw-LD-WwZ" secondAttribute="trailing" constant="20" id="wkG-bv-jHL"/>
                                                 <constraint firstItem="2hl-VV-COH" firstAttribute="leading" secondItem="YpF-RB-CS3" secondAttribute="leadingMargin" constant="20" id="x4d-ze-jXa"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <color key="backgroundColor" red="0.84984401438240265" green="0.84984401438240265" blue="0.84984401438240265" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <connections>
                                             <outlet property="albumImageView" destination="dDm-wH-bCY" id="pzO-vV-pID"/>
                                             <outlet property="artistNameLabel" destination="lTw-LD-WwZ" id="CdJ-fb-0O5"/>
@@ -259,7 +270,7 @@
                                 </connections>
                             </tableView>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="backgroundColor" red="0.84984401438240265" green="0.84984401438240265" blue="0.84984401438240265" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="P9a-LL-DcY" firstAttribute="bottom" secondItem="ZJG-lD-Ocl" secondAttribute="bottom" id="5mK-pN-aRg"/>
                             <constraint firstItem="ZJG-lD-Ocl" firstAttribute="leading" secondItem="P9a-LL-DcY" secondAttribute="leading" id="7jA-Xb-Nux"/>
@@ -268,7 +279,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="P9a-LL-DcY"/>
                     </view>
-                    <navigationItem key="navigationItem" id="rAS-ws-hTs"/>
+                    <navigationItem key="navigationItem" title="Saved HapZaps" id="rAS-ws-hTs"/>
                     <connections>
                         <outlet property="hapZapsTableView" destination="ZJG-lD-Ocl" id="lx7-Ue-jnQ"/>
                     </connections>
@@ -285,6 +296,15 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="gvG-bA-X50">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" red="0.29803921568627451" green="0.16862745098039217" blue="0.21176470588235294" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="tintColor" red="0.96862745098039216" green="0.74901960784313726" blue="0.46274509803921571" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="barTintColor" red="0.29803921568627451" green="0.16862745098039217" blue="0.21176470588235294" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" red="0.96862745098039216" green="0.74901960784313726" blue="0.46274509803921571" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </textAttributes>
+                        <textAttributes key="largeTitleTextAttributes">
+                            <color key="textColor" red="0.96862745098039216" green="0.74901960784313726" blue="0.46274509803921571" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>

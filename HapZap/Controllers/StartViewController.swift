@@ -8,7 +8,7 @@
 
 import UIKit
 
-class StartViewController: UIViewController {
+class StartViewController: UIViewController, UITextFieldDelegate {
     
     var currentQuestion = ""
     @IBOutlet weak var questionTextField: UITextField!
@@ -16,6 +16,14 @@ class StartViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        // code needed for hiding keyboard when enter is pressed
+        self.questionTextField.delegate = self
+    }
+    
+    // hide keyboard when enter is pressed
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        return true
     }
     
     @IBAction func hapZapButtonPressed(_ sender: Any) {

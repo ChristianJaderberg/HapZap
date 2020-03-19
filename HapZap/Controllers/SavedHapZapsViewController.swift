@@ -14,6 +14,7 @@ class SavedHapZapsViewController: UIViewController, UITableViewDelegate, UITable
     let ref = Database.database().reference()
     var savedHapZaps = [SongHapZap]()
     var switchCellBGColor = true
+    var tableViewRowHeight: CGFloat = 420
     
     @IBOutlet weak var hapZapsTableView: UITableView!
     
@@ -23,6 +24,10 @@ class SavedHapZapsViewController: UIViewController, UITableViewDelegate, UITable
         self.updateTableView()
 
         // Do any additional setup after loading the view.
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        self.updateTableView()
     }
     
     func updateTableView() -> Void {
@@ -43,6 +48,9 @@ class SavedHapZapsViewController: UIViewController, UITableViewDelegate, UITable
                     self.savedHapZaps.append(newHapzap)
                 }
                 
+                // reverse the HapZaps to bring the last saved on top
+                self.savedHapZaps.reverse()
+                
                 self.hapZapsTableView.reloadData()
             }
             
@@ -62,11 +70,10 @@ class SavedHapZapsViewController: UIViewController, UITableViewDelegate, UITable
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        tableView.rowHeight = 330
+        tableView.rowHeight = self.tableViewRowHeight
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! HapZapTableViewCell
         
-        self.savedHapZaps.reverse()
         let hapZap = self.savedHapZaps[indexPath.row]
         
         cell.delegate = self
@@ -80,14 +87,15 @@ class SavedHapZapsViewController: UIViewController, UITableViewDelegate, UITable
         let url = hapZap.imageURL
         guard let imageURL = URL(string: url) else { return cell }
         cell.albumImageView.downloadImage(from: imageURL)
-        
+        /*
         if switchCellBGColor {
-            cell.cellContentView.backgroundColor = UIColor.blue
+            cell.cellContentView.backgroundColor = UIColor(red:0.90, green:0.79, blue:0.89, alpha:1.00)
             self.switchCellBGColor = false
         } else {
-            cell.cellContentView.backgroundColor = UIColor.red
+            cell.cellContentView.backgroundColor = UIColor(red:0.85, green:0.70, blue:0.83, alpha:1.00)
             self.switchCellBGColor = true
         }
+        */
  
         return cell
     }
