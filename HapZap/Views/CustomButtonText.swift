@@ -8,7 +8,7 @@
 
 import UIKit
 
-class CustomButtonSecondary: UIButton {
+class CustomButtonText: UIButton {
     
     let hapZapColor = HapZapColor()
     
@@ -24,11 +24,7 @@ class CustomButtonSecondary: UIButton {
     
     func setupButton() {
         setTitleColor(self.hapZapColor.dark, for: .normal)
-        layer.borderWidth = 2.0
-        layer.borderColor = self.hapZapColor.dark.cgColor
-        
-        self.backgroundColor = self.hapZapColor.light
-        self.layer.cornerRadius = self.layer.frame.height / 2
     }
     
 }
+

@@ -40,7 +40,8 @@
 		D9F6E6B6241FC39600E51318 /* SavedHapZapsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9F6E6B5241FC39600E51318 /* SavedHapZapsViewController.swift */; };
 		D9F6E6B8242371F400E51318 /* CustomButtonPrimary.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9F6E6B7242371F300E51318 /* CustomButtonPrimary.swift */; };
 		D9F6E6BA24237AD700E51318 /* HapZapColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9F6E6B924237AD700E51318 /* HapZapColor.swift */; };
-		D9F6E6BC2423941C00E51318 /* CustomButtonSecondary.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9F6E6BB2423941B00E51318 /* CustomButtonSecondary.swift */; };
+		D9F6E6BC2423941C00E51318 /* CustomButtonText.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9F6E6BB2423941B00E51318 /* CustomButtonText.swift */; };
+		D9F6E6BE2423FBA400E51318 /* CustomButtonSecondary.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9F6E6BD2423FBA400E51318 /* CustomButtonSecondary.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -103,7 +104,8 @@
 		D9F6E6B5241FC39600E51318 /* SavedHapZapsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedHapZapsViewController.swift; sourceTree = "<group>"; };
 		D9F6E6B7242371F300E51318 /* CustomButtonPrimary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButtonPrimary.swift; sourceTree = "<group>"; };
 		D9F6E6B924237AD700E51318 /* HapZapColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HapZapColor.swift; sourceTree = "<group>"; };
-		D9F6E6BB2423941B00E51318 /* CustomButtonSecondary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButtonSecondary.swift; sourceTree = "<group>"; };
+		D9F6E6BB2423941B00E51318 /* CustomButtonText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButtonText.swift; sourceTree = "<group>"; };
+		D9F6E6BD2423FBA400E51318 /* CustomButtonSecondary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButtonSecondary.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -199,7 +201,8 @@
 				D98E9DF724090CCB0082FBEC /* Main.storyboard */,
 				D9F6E6B3241FC00B00E51318 /* HapZapTableViewCell.swift */,
 				D9F6E6B7242371F300E51318 /* CustomButtonPrimary.swift */,
-				D9F6E6BB2423941B00E51318 /* CustomButtonSecondary.swift */,
+				D9F6E6BD2423FBA400E51318 /* CustomButtonSecondary.swift */,
+				D9F6E6BB2423941B00E51318 /* CustomButtonText.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -419,9 +422,10 @@
 				0400B1AD2417E6D400C22904 /* SpotifyToken.swift in Sources */,
 				0492087D2418232A0078A844 /* RandomSongController.swift in Sources */,
 				D98E9DF224090CCB0082FBEC /* AppDelegate.swift in Sources */,
-				D9F6E6BC2423941C00E51318 /* CustomButtonSecondary.swift in Sources */,
+				D9F6E6BC2423941C00E51318 /* CustomButtonText.swift in Sources */,
 				D98E9DF424090CCB0082FBEC /* SceneDelegate.swift in Sources */,
 				D939BC2724196D1C008DF87C /* StartViewController.swift in Sources */,
+				D9F6E6BE2423FBA400E51318 /* CustomButtonSecondary.swift in Sources */,
 				0400B1AF2417EEBA00C22904 /* SpotifySearchData.swift in Sources */,
 				D9F6E6BA24237AD700E51318 /* HapZapColor.swift in Sources */,
 				D9F6E6B8242371F400E51318 /* CustomButtonPrimary.swift in Sources */,

@@ -15,6 +15,7 @@ class SavedHapZapsViewController: UIViewController, UITableViewDelegate, UITable
     var savedHapZaps = [SongHapZap]()
     var switchCellBGColor = true
     var tableViewRowHeight: CGFloat = 420
+    let hapZapColor = HapZapColor()
     
     @IBOutlet weak var hapZapsTableView: UITableView!
     
@@ -87,15 +88,6 @@ class SavedHapZapsViewController: UIViewController, UITableViewDelegate, UITable
         let url = hapZap.imageURL
         guard let imageURL = URL(string: url) else { return cell }
         cell.albumImageView.downloadImage(from: imageURL)
-        /*
-        if switchCellBGColor {
-            cell.cellContentView.backgroundColor = UIColor(red:0.90, green:0.79, blue:0.89, alpha:1.00)
-            self.switchCellBGColor = false
-        } else {
-            cell.cellContentView.backgroundColor = UIColor(red:0.85, green:0.70, blue:0.83, alpha:1.00)
-            self.switchCellBGColor = true
-        }
-        */
  
         return cell
     }
@@ -116,6 +108,16 @@ class SavedHapZapsViewController: UIViewController, UITableViewDelegate, UITable
             self.updateTableView()
             
         })
+    }
+    
+    // Change color of swipe to delete-button
+    func tableView(_ tableView: UITableView, editActionsForRowAt indexPath: IndexPath) -> [UITableViewRowAction]? {
+        let deleteButton = UITableViewRowAction(style: .default, title: "Delete") { (action, indexPath) in
+            self.hapZapsTableView.dataSource?.tableView!(self.hapZapsTableView, commit: .delete, forRowAt: indexPath)
+            return
+        }
+        deleteButton.backgroundColor = self.hapZapColor.dark
+        return [deleteButton]
     }
 
 }
